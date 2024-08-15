@@ -86,14 +86,14 @@
         &kp Q  &kp W       &kp F        &kp P        &kp B       &kp J      &kp L        &kp U        &kp Y       &kp SEMI
         &kp A  &mt LALT R  &mt LCTRL S  &mt LSHFT T  &kp G       &kp M      &mt RSHFT N  &mt RCTRL E  &mt RALT I  &kp O
 &trans  &kp Z  &kp X       &kp C        &kp D        &kp V       &kp K      &kp H        &kp COMMA    &kp DOT     &kp FSLH  &kp BSLH
-                           &kp DEL      &lt 1 TAB    &kp BSPC    &kp SPACE  &lt 3 ESC    &kp RET
+                           &kp DEL      &lt 1 TAB    &kp BSPC    &kp SPACE  &lt 2 ESC    &kp RET
             >;
         };
 
-        nav_layer {
+        adjust_left {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
-            label = "nav_layer";
+            label = "adjust_left";
 
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
             //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
@@ -114,8 +114,8 @@
             >;
         };
 
-        num {
-            label = "num";
+        adjust_right {
+            label = "adjust_right";
             bindings = <
         &trans  &trans  &trans     &trans  &trans       &kp C_VOLUME_UP        &kp N7  &kp N8      &kp N9  &trans
         &trans  &trans  &trans     &trans  &trans       &kp RS(C_VOLUME_DOWN)  &kp N4  &kp N5      &kp N6  &trans
