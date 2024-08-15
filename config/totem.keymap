@@ -42,6 +42,11 @@
             key-positions = <11 12 13>;
             bindings = <&tog 0>;
         };
+
+        softsleep {
+            bindings = <&soft_off>;
+            key-positions = <34 14 2 1 10>;
+        };
     };
 
     macros {
