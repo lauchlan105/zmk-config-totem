@@ -83,19 +83,17 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp Q       &kp W       &kp F        &kp P        &kp B       &kp J      &kp L        &kp U        &kp Y       &kp SEMI
-        &mt LGUI A  &mt LALT R  &mt LCTRL S  &mt LSHFT T  &kp G       &kp M      &mt RSHFT N  &mt RCTRL E  &mt RALT I  &mt RGUI O
-&trans  &kp Z       &kp X       &kp C        &kp D        &kp V       &kp K      &kp H        &kp COMMA    &kp DOT     &kp FSLH    &kp BSLH
-                                &kp DEL      &lt 1 TAB    &kp BSPC    &kp SPACE  &lt 2 ESC    &kp RET
+        &kp Q  &kp W       &kp F        &kp P        &kp B       &kp J      &kp L        &kp U        &kp Y       &kp SEMI
+        &kp A  &mt LALT R  &mt LCTRL S  &mt LSHFT T  &kp G       &kp M      &mt RSHFT N  &mt RCTRL E  &mt RALT I  &kp O
+&trans  &kp Z  &kp X       &kp C        &kp D        &kp V       &kp K      &kp H        &kp COMMA    &kp DOT     &kp FSLH  &kp BSLH
+                           &kp DEL      &lt 1 TAB    &kp BSPC    &kp SPACE  &lt 4 ESC    &kp RET
             >;
         };
-
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
         nav_layer {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
-            label = "NAVI";
+            label = "nav_layer";
 
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
             //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
@@ -109,15 +107,32 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
+        &kp HOME  &kp PAGE_UP   &kp PAGE_DOWN  &kp END    &kp C_PREV          &trans         &trans  &trans      &trans  &trans
+        &kp LEFT  &kp UP_ARROW  &kp DOWN       &kp RIGHT  &kp C_NEXT          &trans         &trans  &trans      &trans  &trans
+&trans  &trans    &trans        &trans         &trans     &kp C_PLAY_PAUSE    &trans         &trans  &trans      &trans  &trans  &trans
+                                &kp ENTER      &mo 3      &kp SPACE           &kp BACKSPACE  &mo 3   &kp DELETE
+            >;
+        };
+
+        num {
+            label = "num";
+            bindings = <
+        &trans  &trans  &trans     &trans  &trans       &kp C_VOLUME_UP        &kp N7  &kp N8      &kp N9  &trans
+        &trans  &trans  &trans     &trans  &trans       &kp RS(C_VOLUME_DOWN)  &kp N4  &kp N5      &kp N6  &trans
+&trans  &trans  &trans  &trans     &trans  &trans       &kp C_MUTE             &kp N1  &kp N2      &kp N3  &trans  &trans
+                        &kp ENTER  &mo 3   &kp SPACE    &kp BACKSPACE          &mo 3   &kp DELETE
+            >;
+        };
+
+        navnum {
+            label = "navnum";
+            bindings = <
         &kp HOME  &kp PAGE_UP   &kp PAGE_DOWN  &kp END    &kp C_PREV          &kp C_VOLUME_UP        &kp N7  &kp N8      &kp N9  &trans
         &kp LEFT  &kp UP_ARROW  &kp DOWN       &kp RIGHT  &kp C_NEXT          &kp RS(C_VOLUME_DOWN)  &kp N4  &kp N5      &kp N6  &trans
 &trans  &trans    &trans        &trans         &trans     &kp C_PLAY_PAUSE    &kp C_MUTE             &kp N1  &kp N2      &kp N3  &trans  &trans
                                 &kp ENTER      &trans     &kp SPACE           &kp BACKSPACE          &trans  &kp DELETE
             >;
         };
-
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
         adjust_layer {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
