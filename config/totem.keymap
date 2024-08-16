@@ -48,13 +48,13 @@
             key-positions = <20 32 33 34>;
         };
 
-        BT_CLR {
+        clear_profile {
             bindings = <&bt BT_CLR>;
             key-positions = <25 34>;
             layers = <5>;
         };
 
-        RESET {
+        reset {
             bindings = <&bootloader>;
             key-positions = <32 33 34 35 36 37>;
             require-prior-idle-ms = <2000>;
