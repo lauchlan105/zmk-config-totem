@@ -11,6 +11,7 @@
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 #define BASE 0
@@ -37,15 +38,27 @@
             bindings = <&kp ESC>;
         };
 
-        combo_tvp {
-            timeout-ms = <100>;
-            key-positions = <11 12 13>;
-            bindings = <&tog 0>;
-        };
-
         softsleep {
             bindings = <&soft_off>;
-            key-positions = <34 14 2 1 10>;
+            key-positions = <21 23 24 25>;
+        };
+
+        config {
+            bindings = <&to 5>;
+            key-positions = <20 32 33 34>;
+        };
+
+        BT_CLR {
+            bindings = <&bt BT_CLR>;
+            key-positions = <25 34>;
+            layers = <5>;
+        };
+
+        RESET {
+            bindings = <&bootloader>;
+            key-positions = <32 33 34 35 36 37>;
+            require-prior-idle-ms = <2000>;
+            layers = <5>;
         };
     };
 
@@ -162,6 +175,17 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &none   &kp F1  &kp F2  &kp F3  &kp F10  &none
                         &trans  &trans  &trans    &trans  &trans  &trans
             >;
+        };
+
+        config {
+            bindings = <
+       &none         &none         &none         &none         &to 0    &none  &none  &none  &none  &none
+       &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &none    &none  &none  &none  &none  &none
+&none  &none         &none         &none         &none         &none    &none  &none  &none  &none  &none  &none
+                                   &none         &none         &none    &none  &none  &none
+            >;
+
+            label = "config";
         };
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
