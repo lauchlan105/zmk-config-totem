@@ -135,10 +135,10 @@
         adjust_right {
             label = "adjust_right";
             bindings = <
-        &trans  &trans  &trans     &trans  &trans       &kp C_VOLUME_UP        &kp KP_N7  &kp KP_N8   &kp KP_N9  &none
-        &trans  &trans  &trans     &trans  &trans       &kp RS(C_VOLUME_DOWN)  &kp KP_N4  &kp KP_N5   &kp KP_N6  &kp KP_N0
-&trans  &trans  &trans  &trans     &trans  &trans       &kp C_MUTE             &kp KP_N1  &kp KP_N2   &kp KP_N3  &none      &caps_word
-                        &kp ENTER  &mo 3   &kp SPACE    &kp BACKSPACE          &trans     &kp DELETE
+        &trans  &trans  &trans     &trans  &trans       &kp C_VOLUME_UP    &kp KP_N7  &kp KP_N8   &kp KP_N9  &none
+        &trans  &trans  &trans     &trans  &trans       &kp C_VOLUME_DOWN  &kp KP_N4  &kp KP_N5   &kp KP_N6  &kp KP_N0
+&trans  &trans  &trans  &trans     &trans  &trans       &kp C_MUTE         &kp KP_N1  &kp KP_N2   &kp KP_N3  &none      &caps_word
+                        &kp ENTER  &mo 3   &kp SPACE    &kp BACKSPACE      &trans     &kp DELETE
             >;
         };
 
