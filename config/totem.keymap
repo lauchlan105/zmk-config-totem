@@ -66,36 +66,42 @@
             bindings = <&kp LEFT_BRACE>;
             key-positions = <12 34>;
             layers = <0 2 3>;
+            slow-release;
         };
 
         closebrace {
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <13 34>;
             layers = <0 2 3>;
+            slow-release;
         };
 
         opensqr {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <34 23>;
             layers = <0 2 3>;
+            slow-release;
         };
 
         closesqr {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <34 24>;
             layers = <0 2 3>;
+            slow-release;
         };
 
         openbrack {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <2 34>;
             layers = <0 2 3>;
+            slow-release;
         };
 
         closebrack {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <3 34>;
             layers = <0 2 3>;
+            slow-release;
         };
     };
 
