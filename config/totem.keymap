@@ -64,32 +64,32 @@
 
         openbrace {
             bindings = <&kp LEFT_BRACE>;
-            key-positions = <2 34>;
+            key-positions = <14 33>;
         };
 
         closebrace {
             bindings = <&kp RIGHT_BRACE>;
-            key-positions = <23 34>;
+            key-positions = <14 34>;
         };
 
         opensqr {
             bindings = <&kp LEFT_BRACKET>;
-            key-positions = <1 34>;
+            key-positions = <25 33>;
         };
 
         closesqr {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <22 34>;
+            key-positions = <25 34>;
         };
 
         openbrack {
             bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <3 34>;
+            key-positions = <4 33>;
         };
 
         closebrack {
             bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <24 34>;
+            key-positions = <4 34>;
         };
     };
 
