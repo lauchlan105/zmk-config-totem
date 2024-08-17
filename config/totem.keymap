@@ -65,38 +65,37 @@
         openbrace {
             bindings = <&kp LEFT_BRACE>;
             key-positions = <12 34>;
+            layers = <0 2 3>;
         };
 
         closebrace {
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <13 34>;
+            layers = <0 2 3>;
         };
 
         opensqr {
             bindings = <&kp LEFT_BRACKET>;
-            key-positions = <2 34>;
+            key-positions = <34 23>;
+            layers = <0 2 3>;
         };
 
         closesqr {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <3 34>;
+            key-positions = <34 24>;
+            layers = <0 2 3>;
         };
-    };
 
-    macros {
-        gif: gif {
-            label = "giphy";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp N2>,
-                <&macro_release>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp G &kp I &kp F>;
+        openbrack {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <2 34>;
+            layers = <0 2 3>;
+        };
+
+        closebrack {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <3 34>;
+            layers = <0 2 3>;
         };
     };
 
